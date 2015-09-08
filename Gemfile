@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+# Twitter Bootstrap
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

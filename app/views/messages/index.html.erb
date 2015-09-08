@@ -1,11 +1,12 @@
-<div class="panel panel-default">
+<div class="panel panel-warning">
   <div class="panel-heading">
-    メッセージ一覧
+     <h3 class="panel-title">メッセージ一覧</h3>
   </div>
     
   <div class="panel-body">
     <% @messages.each do |message| %>
       <span class="label label-info"><%= message.name %></span>
+      <SPAN STYLE="border:1px solid #000000">&nbsp;<%= message.age %>&nbsp;</SPAN>
       <%= message.body %>
       (<%= link_to "edit" , edit_message_path(message) %>
       <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>)
